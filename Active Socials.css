@@ -1,0 +1,122 @@
+body{
+	background:url(pexels-photo-1287145.jpeg);
+	background-position:center;
+	backgr-size:cover;
+	text-align:center;
+	overflow:hidden;
+	filter:blur(86%);
+	background-repeat:no-repeat;
+}
+
+input {
+	opacity:0;
+	top:95%;
+	cursor:pointer;
+}
+label{
+	display:inline-block;
+	width:4px;
+	height:4px;
+	margin:43vh 2px 0 2px;
+	border:solid 5px purple;
+	border-radius:40%;
+	z-index:2;
+	cursor:pointer;
+	text-align:center;
+	transition-duration: 0.8s;
+}
+input:checked + label{
+bg-color:white;
+}
+input:focus + label{
+box-shadow:0 0 0 2px rgb(276, 103, 26)0 0 18px white;
+}
+.slide {
+position:absolute;
+background-position:center;
+background-repeat:no-repeat;
+object-fit:cover;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+transform:translateX(-100%);
+transition-duration:0.9s;
+}
+input:checked .slide {
+transform:translateX(100%);
+}
+input:checked + label + .slide {
+transform:translateX(0);	
+opacity:1;
+}
+.bg1{
+	background-image: url(photo-1611702700101-015be5630f10.jpeg);
+	width:30%;
+	height:50%;
+}
+.bg2{
+	background-image: url(photo-1611739894833-2cb9bc626336.jpeg);
+	width:30%;
+	height:50%;
+}
+.bg3{
+	background-image: url(mac.jpeg);
+	width:50%;
+	height:50%;
+	position:absolute;
+}
+.bg4{
+	background-image: url(photo-1611690132358-e493f29c6230.jpeg);
+	width:30%;
+	height:50%;
+}
+.bg5{
+	background-image: url(photo-1611599738437-740eade51365.jpeg);
+	width:30%;
+	height:50%;
+}
+.container{
+width:600px;
+margin: 43vh auto;
+text-align:center;
+}
+.icons{
+	padding:0;
+	list-style:none;
+	margin:1em;
+}
+.icons li{
+	display:inline-block;
+	margin:14px;
+	position:relative;
+	font-size:32px;
+	
+}
+img:active{
+	 transform: scale(0.94);
+	 	transition: all 0.50s ease-in 0);
+
+}
+img:hover{
+	opacity: .8;
+filter:saturate();
+	webkit-filter:sepia(100%);
+border-radius:15px 15px;
+	transform: scale(1.3,1.3);
+}
+.img-4{
+filter: invert(.40);
+	webkit-filter:sepia(100%);
+	top:21px;
+	left:21px;
+	transition: all 0.25s ease-in 0;
+}
+.icons a:before{
+	transform:scale(1);
+	content:"";
+	border-radius:100%;
+	display:block;
+background:linear-gradient(45deg, #94103a, #d6474);	
+}

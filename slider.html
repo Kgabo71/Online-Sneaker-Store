@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="slider">
+<div class="slide"><img src="wp2702669.jpg"></div></div>
+
+<div class="slide"><<img src=" wp5866724.jpg"></div>
+
+<div class="slide"><<img src="wp4992984.jpg"></div>
+
+<div class="slide"<img src=" 2814300.jpg"></div>
+
+<div class="slide"><img src="2814303.jpg"></div>
+
+<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+    </div>
+    <script>
+        var currSlide = 1;
+        showSlide(currSlide);
+
+        function changeSlide(val) {
+            showSlide(currSlide += val);
+        }
+        function showSlide(val) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (val > slides.length) {currSlide = 1}
+            if (val < 1) {currSlide = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[1].style.display = "none"
+            }
+            slides[currSlide-1].style.display = "block"
+        }
+
+    </script>
+    <style>
+        .slider {
+            position: relative;
+        }
+        .slide {
+            width: 1000px;
+            height: 550px;
+            background-size: cover;
+            border-radius: 20px;
+            animation: fade 1.5s;
+        }
+        img {
+            width: 50%;
+            height: 70%;
+        }
+		
+    </style>
+</body>
+</html>
