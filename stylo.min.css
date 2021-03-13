@@ -3,10 +3,10 @@
 /*# sourceMappingURL=style.min.css.map */
  /* For mobile phones: */
 [class*="col-"] {
-  width: 90%;
+  width: 70%;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 400px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
